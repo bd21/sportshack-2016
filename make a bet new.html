@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var gameID = "568d84eb-874f-49f4-b77d-dc23412fb87c";//this is the patriots chargers game during our live demo
+        var patriotsID = "97354895-8c77-4fd4-a860-32e62ea7382a";
+
+
+        function switchCompare() {
+          	if(document.getElementById("compare").value == "less") {
+            	document.getElementById("compare").value = "more";//what
+            } else {
+              document.getElementById("compare").value = "less";
+            }
+
+        }
+        function populateDropdowns() {
+            var resp ;
+            var xhttp ;
+            var url = "http://localhost:8000/nfl-ot1/games/2016/REG/schedule.json?api_key=bnuwzm9vktq7n3pkg5trpnb8";
+
+            xhttp = new XMLHttpRequest();
+
+
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                //document.getElementById("big").innerHTML = this.responseText;
+                var s = JSON.parse(this.responseText);
+                console.log(s);
+
+            }
+            };
+            xhttp.open("GET", url, true);
+            xhttp.send();
+
+
+        }
+    </script>
+</head>
+
+<body>
+<input type="button" id = "start" onclick="populateDropdowns()" value="start request">
+  <p>I bet user...{ALREADY SELECTED} that during the {selected game}
+    <form>
+        <select id="mySelect">
+            <option>Vikings</option>
+            <option>Shaun Hill</option>
+            <option>Kyle Rudolph</option>
+            <option>Adrian Peterson</option>
+        </select>
+        <select id="mySelect2">
+            <option>Titans</option>
+            <option>Marcus Mariota</option>
+            <option>Demarco Murray</option>
+            <option>Denalie Walker</option>
+        </select>
+        will have
+        <input type="button" id = "compare" onclick="switchCompare()" value="more">
+        <select id="stat">
+            <option>Points</option>
+            <option>Passing yards</option>
+            <option>Fumbles</option>
+            <option>Touchdowns</option>
+        </select>
+        than
+        <select id="mySelect3">
+            <option>Vikings</option>
+            <option>Shaun Hill</option>
+            <option>Kyle Rudolph</option>
+            <option>Adrian Peterson</option>
+        </select>
+        <select id="mySelect4">
+            <option>Titans</option>
+            <option>Marcus Mariota</option>
+            <option>Demarco Murray</option>
+            <option>Denalie Walker</option>
+        </select>
+        by
+        <select id="mySelect5">
+            <option>14:30</option>
+            <option>14:00</option>
+            <option>13:30</option>
+            <option>13:00</option>
+        </select>
+        <br>
+        <br>
+        Current Game time (plus a small buffer): 14:42, First Quarter
+    </form>
+  </p>
+</body>
+
+</html>

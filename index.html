@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TallyUp 2016</title>
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/grid.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/Navigation.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/FeedPost.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/FriendList.css" />
+    <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+    <script>
+      // Initialize global
+
+      var LOGGEDIN_USER = 'Toby Liu';
+
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBwDX8HL_4gtWKzAqSjINPCgbURsODO0z4",
+        authDomain: "sportstechhackathon.firebaseapp.com",
+        databaseURL: "https://sportstechhackathon.firebaseio.com",
+        storageBucket: "sportstechhackathon.appspot.com",
+      };
+      firebase.initializeApp(config);
+      var authRef = firebase.auth();
+
+      var email = 'joshuamielke@gmail.com';
+      var password = 'seattlesportshackathon';
+    </script>
+</head>
+
+<body>
+  <div id="app" class="container-fixed" style="width: 800px; margin: auto;"></div>
+  <script src="./bundle.js"></script>
+  <script src="./jquery-3.1.0.min.js"></script>
+</body>

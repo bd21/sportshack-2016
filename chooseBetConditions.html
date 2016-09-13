@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function switchCompare() {
+          	if(document.getElementById("compare").value == "less") {
+            	document.getElementById("compare").value = "more";
+            } else {
+              document.getElementById("compare").value = "less";
+            }
+
+        }
+        function populateDropdowns() {
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+  <p>I bet user...{ALREADY SELECTED} that
+    <form>
+        <select id="mySelect">
+            <option>Vikings</option>
+            <option>Shaun Hill</option>
+            <option>Kyle Rudolph</option>
+            <option>Adrian Peterson</option>
+        </select>
+        <select id="mySelect2">
+            <option>Titans</option>
+            <option>Marcus Mariota</option>
+            <option>Demarco Murray</option>
+            <option>Denalie Walker</option>
+        </select>
+        will have
+        <input type="button" id = "compare" onclick="switchCompare()" value="more">
+        <select id="stat">
+            <option>Points</option>
+            <option>Passing yards</option>
+            <option>Fumbles</option>
+            <option>Touchdowns</option>
+        </select>
+        than
+        <select id="mySelect3">
+            <option>Vikings</option>
+            <option>Shaun Hill</option>
+            <option>Kyle Rudolph</option>
+            <option>Adrian Peterson</option>
+        </select>
+        <select id="mySelect4">
+            <option>Titans</option>
+            <option>Marcus Mariota</option>
+            <option>Demarco Murray</option>
+            <option>Denalie Walker</option>
+        </select>
+        by
+        <select id="mySelect5">
+            <option>14:30</option>
+            <option>14:00</option>
+            <option>13:30</option>
+            <option>13:00</option>
+        </select>
+        <br>
+        <br>
+        Current Game time (plus a small buffer): 14:42, First Quarter
+    </form>
+  </p>
+</body>
+
+</html>

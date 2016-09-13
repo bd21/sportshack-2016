@@ -1,0 +1,116 @@
+h1 {
+  text-align: center;
+}
+
+.feed-post {
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px white dashed;
+}
+
+.feed-post img {
+  max-height: 50px;
+  max-width: 100%;
+}
+
+.feed-post .bet-info {
+  font-size: 1.5em;
+  padding: 0px 10px 0px 10px;
+  margin: 0px;
+}
+
+.feed-post .betValue {
+  font-size: 2em;
+}
+
+.feed-post .betValue p {
+  text-align: center;
+}
+
+.feed-post .live-preview {
+  margin-top: 20px;
+}
+
+.feed-post .live-preview p {
+  line-height: 1em;
+  margin: 0px 0px 10px 0px;
+}
+
+.feed-post .ongoing {
+  color: red;
+}
+
+.feed-post .finished {
+  color: green;
+}
+
+/**** history ***/
+#history-overview {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#history-overview p {
+  font-size: 2em;
+  margin-top: 0px;
+}
+
+#history-overview img {
+  height: 150px;
+}
+
+#history-overview .button {
+  display: inline-block;
+  height: 100px;
+  width: 200px;
+  line-height: 100px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px white solid;
+}
+
+#history-overview .button:hover {
+  background: #4d4d4d;
+}
+
+#net-points {
+  margin: 0px;
+  padding: 0px;
+  line-height: 150px;
+}
+
+.ahead {
+  color: green;
+}
+
+.behind {
+  color: red;
+}
+
+/** live game listing **/
+#live-game-list {
+  text-align: left;
+}
+
+#live-game-list .againstWho {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#live-game-list .livegame {
+  width: 80%;
+  font-size: 2em;
+  margin: 0px auto 20px auto;
+  cursor: pointer;
+}
+
+#live-game-list .livegame:not(.gameDisabled):hover {
+  background: #4d4d4d;
+}
+
+#live-game-list .livegame.gameDisabled {
+  cursor: auto;
+  color: #4d4d4d;
+}

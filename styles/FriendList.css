@@ -1,0 +1,23 @@
+.friend {
+  margin-bottom: 5px;
+  font-size: 3em;
+}
+.friendName, .friendPoints {
+  position: relative;
+}
+.friend img {
+  max-height: 150px;
+  max-width: 100%;
+}
+.friendPoints {
+  text-align: right;
+}
+.friend .ahead {
+  color: green;
+}
+.friend .behind {
+  color: red;
+}
+.friend:hover {
+  background-color: #4d4d4d;
+}
