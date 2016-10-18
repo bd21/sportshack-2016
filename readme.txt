@@ -1,5 +1,5 @@
 This is a live peer-to-peer sports betting app created in 20 hours at the Seattle Sports Tech Hackathon.  Users are initially shown a live feed of current and past bets of their friends.  To make their own bet on a current game, users select live games, offensive players, a statistic to bet on, and a time expiration.  Once a bet request is submitted to another user and accepted, they appear on the live feed on the homepage for all friends to see.
 
-Our web app uses the React library and makes javascript calls to make requests to both Firebase and the SportsRadar API.  It forwards these requests through a simple python server to get around CORS blocks.  We used Firebase (NoSql, hierarchical parent-child relationshipsf) to store users, user bets, authentication, and bets made by each user's friends.
+Our web app uses the React library and makes Javascript calls to make requests to both Firebase and the SportsRadar API.  It forwards these requests through a simple python server to get around CORS blocks.  We used Firebase (NoSql, hierarchical parent-child relationships) to store users, user bets, authentication, and bets made by each user's friends.
 
 Demo presentation: https://docs.google.com/presentation/d/1wAej-5H3MedM4rXWpZPB4af7MRVf1Xgu3LkoBQl5G_Q/edit?usp=sharing
